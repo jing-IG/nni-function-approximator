@@ -1,0 +1,6 @@
+{
+    "act_func": {"_type": "choice", "_value": ["ReLU", "LeakyReLU", "Sigmoid", "Tanh", "Softplus"]},
+    "learning_rate": {"_type": "quniform", "_value": [0.005, 0.05, 0.01]},
+    "optimizer": {"_type": "choice", "_value": ["SGD", "Adam", "RMSprop"]},
+    "loss": {"_type":  "choice", "_value":  ["SmoothL1Loss", "MSELoss"]}
+}

@@ -1,0 +1,15 @@
+authorName: default
+experimentName: single_var_func
+trialConcurrency: 2
+maxExecDuration: 5h
+maxTrialNum: 5000
+trainingServicePlatform: local
+#searchSpacePath: search_space_non_arch.json
+searchSpacePath: search_space_arch.json
+useAnnotation: false
+tuner:
+  builtinTunerName: GridSearch
+trial:
+  command: python3 func_approx_nni.py oscillator
+  codeDir: .
+  gpuNum: 0

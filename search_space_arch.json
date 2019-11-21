@@ -1,0 +1,5 @@
+{
+    "hidden_size_1": {"_type": "choice", "_value": [4, 8, 16, 32, 64, 128]},
+    "hidden_size_2": {"_type": "choice", "_value": [0, 4, 8, 16, 32]},
+    "hidden_size_3": {"_type": "choice", "_value": [0, 4, 8, 16, 32]}
+}
