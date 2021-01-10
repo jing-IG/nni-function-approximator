@@ -121,6 +121,7 @@ class FuncApproxDataset(torch.utils.data.Dataset):
 def main(params, func_name):
     if not validate_params(params): # for invalid param combinations, report the worst possible result
         nni.report_final_result(0.0)
+        return
 
     train_ds = FuncApproxDataset(func_name, is_train=True)
     eval_ds = FuncApproxDataset(func_name, is_train=False)

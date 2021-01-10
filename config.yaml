@@ -10,6 +10,7 @@ useAnnotation: false
 tuner:
   builtinTunerName: GridSearch
 trial:
+#  command: python3 func_approx_nni.py quadratic
   command: python3 func_approx_nni.py oscillator
   codeDir: .
   gpuNum: 0
